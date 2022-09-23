@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+}
+
+i {
+    color: #005a9c;
+}
+
+body {
+   display: flex;
+   flex-direction: row;
+   font-family: sans-serif;
+   height: 100%;
+   width: 100%;
+}
+
+#image {
+    height: 100vh;
+    width: auto;
+}
+
+#right-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(223, 223, 223);
+    font-weight: bolder;
+    height: 40vh;
+    width: auto;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+#header-text {
+    display: block;
+    font-size: 24px;
+    width: 800px;
+    margin: 10px;
+    padding: 15px;
+}
+
+#form-section {
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    width: 100%;
+}
+
+.input-section {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0px 7px 32px -15px #005a9c;
+}
+
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    width: 100%;
+    margin-left: 29px;
+    margin-top: 4px;
+}
+.form-input {
+    display: flex;
+    width: 38%;
+    flex-direction: column;
+    margin: 7px;
+}
+
+.input-section fieldset {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    border: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 65%;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+input {
+    height: 27px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #005a9c;
+    box-shadow: 0px 7px 32px -15px #005a9c;
+}
+
+input:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+.form-input label {
+    margin: 11px;
+}
