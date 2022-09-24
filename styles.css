@@ -2,8 +2,28 @@
     margin: 0;
 }
 
+:root {
+    --main-color: #005a9c;
+    --second-color: dodgerblue;
+    --third-color: 
+}
+
 i {
     color: #005a9c;
+}
+
+a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+a:hover {
+    color: #004b81;
+}
+
+p {
+    font-size: 22px;
+    width: 100%;
 }
 
 body {
@@ -12,6 +32,30 @@ body {
    font-family: sans-serif;
    height: 100%;
    width: 100%;
+   padding: 0;
+}
+
+#left-page {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: auto;
+}
+
+#left-title {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    top: 234px;
+    background-color: rgba(0, 90, 156, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+#odin-logo {
+    height: 11em;
 }
 
 #image {
@@ -31,7 +75,7 @@ body {
     justify-content: flex-end;
     background-color: rgb(223, 223, 223);
     font-weight: bolder;
-    height: 40vh;
+    height: 30vh;
     width: auto;
     font-size: 1.2em;
     padding: 1em;
@@ -40,58 +84,47 @@ body {
 #header-text {
     display: block;
     font-size: 24px;
-    width: 800px;
+    width: 40vw;
     margin: 10px;
     padding: 15px;
 }
 
 #form-section {
-    display: flex;
-    flex-direction: row;
     height: 40vh;
     width: 100%;
-}
-
-.input-section {
-    display: flex;
-    height: 70%;
-    width: 100%;
-    justify-content: space-between;
-    box-shadow: 0px 7px 32px -15px #005a9c;
 }
 
 #sign-up {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    min-height: 70%;
+    box-shadow: 0px 7px 32px -15px var(--main-color);
+    min-width: 700px;
+    max-width: 100%;
 }
 
 #title {
     width: 100%;
-    margin-left: 29px;
-    margin-top: 4px;
-}
-.form-input {
-    display: flex;
-    width: 38%;
-    flex-direction: column;
-    margin: 7px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 
-.input-section fieldset {
-    min-width: 0;
-    min-height: 0;
-    height: 100%;
-    border: none;
-
+#sign-up fieldset {
     display: flex;
     flex-flow: row wrap;
-    align-content: space-around;
-    justify-content: space-around;
+    height: 100%;
     width: 65%;
-    margin: 20px;
-    margin-left: 0px;
+    align-content: center;
+    border: none;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 17px;
+    margin-left: 35px;
+    margin-top: 15px;
 }
 
 input {
@@ -104,15 +137,49 @@ input {
 
 input:focus {
     outline: none;
-    border: 1px solid #005a9c;
-    box-shadow: 0px 7px 32px -15px #005a9c;
-}
-
-input:invalid {
-    outline: none;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
+    box-shadow: 0px 7px 32px -15px var(--main-color);
 }
 
 .form-input label {
     margin: 11px;
+}
+
+#submit {
+    position: relative;
+}
+
+#submit button {
+    position: absolute;
+    
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 1px 9px -2px var(--main-color);
+    margin: 40px;
+}
+
+#submit button:hover {
+    background-color: #004b81;
+}
+
+#submit button:active {
+    border: 2px solid black;
+    background-color: #004b81;
+}
+
+#login {
+    font-size: 20px;
+
+    margin-left: 44px;
+    margin-top: 10px;
+}
+
+#login p {
+    
 }
